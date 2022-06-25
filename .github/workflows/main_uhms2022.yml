@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'uhms2022'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1820EBC576124A82B85CD2B1540585EB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CF1E3E0BA0D418785016EAB3C6EE572 }}
