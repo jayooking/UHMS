@@ -79,10 +79,19 @@ WSGI_APPLICATION = 'hospitalmanagement.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        "ENGINE": "mssql",
+        "NAME": "uhmsDB",
+        "USER": "jayooking",
+        "PASSWORD": "22@brave",
+        "HOST": "uhms.database.windows.net",
+        "PORT": "1433",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
+        }   
 }
 
 
